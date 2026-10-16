@@ -72,7 +72,7 @@
 
 @layer base{
   :root{
-    --background: 210 40% 98%;
+    --background: 0 0% 100%;
     --foreground: 222 47% 11%;
 
     --card: 0 0% 100%;
@@ -183,8 +183,9 @@ box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.3)
   inset: 0;
   z-index: -1;
   overflow: hidden;
-  background: #000;
+  background: hsl(var(--background));
   pointer-events: none;
+  transition: background-color 300ms;
 }
 
 .starfield__stars,
@@ -196,8 +197,8 @@ box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.3)
 .starfield__star {
   position: absolute;
   border-radius: 50%;
-  background: #fff;
-  box-shadow: 0 0 6px rgba(255, 255, 255, 0.7);
+  background: hsl(var(--foreground));
+  box-shadow: 0 0 6px color-mix(in srgb, hsl(var(--foreground)) 70%, transparent);
 }
 
 .starfield__meteor {
@@ -208,7 +209,7 @@ box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.3)
   border-radius: 999px;
   transform: rotate(-45deg);
   transform-origin: right center;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.12) 50%, transparent);
+  background: linear-gradient(90deg, color-mix(in srgb, hsl(var(--foreground)) 75%, transparent), color-mix(in srgb, hsl(var(--foreground)) 12%, transparent) 50%, transparent);
   animation-name: starfield-meteor;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -221,8 +222,8 @@ box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.3)
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: #fff;
-  box-shadow: 0 0 6px 2px rgba(255, 255, 255, 0.8);
+  background: hsl(var(--foreground));
+  box-shadow: 0 0 6px 2px color-mix(in srgb, hsl(var(--foreground)) 80%, transparent);
   content: "";
   transform: translateY(-50%);
 }
