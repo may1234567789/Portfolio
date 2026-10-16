@@ -1,12 +1,15 @@
 import { ThemeToggle } from "../components/ThemeToggle";
+import { StarBackground } from "../components/StarBackground";
 
 export default function Home() {
     return (
-        <div className='min-h-screen'>
+        <div className='relative isolate min-h-screen bg-transparent'>
             {/* Theme Toggle */}
-            <ThemeToggle />
-            <h1>Home Page</h1>
+            <div className="relative z-10">
+                <ThemeToggle />
+            </div>
             {/* Background Effects */}
+            <StarBackground />
         </div>
     )
 }
