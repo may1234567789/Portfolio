@@ -1,29 +1,46 @@
-import { Code2, Database, Layers3, Wrench } from "lucide-react";
+import { BrainCircuit, Code2, Database, Wrench } from "lucide-react";
 
 const skillGroups = [
     {
-        title: "Frontend",
-        description: "Crafting responsive, accessible user interfaces.",
+        title: "Web Development",
+        description: "Building responsive web experiences from frontend to backend.",
         icon: Code2,
-        skills: ["React", "JavaScript", "HTML", "CSS", "Tailwind CSS"],
+        skills: [
+            "React",
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Tailwind CSS",
+            "Node.js",
+            "REST APIs",
+        ],
     },
     {
-        title: "Backend",
-        description: "Building APIs and application logic.",
+        title: "AI & ML",
+        description: "Exploring intelligent tools and practical workflow automation.",
+        icon: BrainCircuit,
+        skills: ["AI tools", "Workflow automation"],
+    },
+    {
+        title: "Data Science",
+        description: "Connecting services and working with application data.",
         icon: Database,
-        skills: ["Node.js", "REST APIs", "SQL", "Authentication"],
+        skills: ["SQL", "Authentication"],
     },
     {
-        title: "Tools",
-        description: "Keeping development workflows productive.",
+        title: "DevOps & Tools",
+        description: "Keeping development workflows productive and experiences reliable.",
         icon: Wrench,
-        skills: ["Git", "GitHub", "Vite", "VS Code"],
-    },
-    {
-        title: "Practices",
-        description: "Making software easier to use and maintain.",
-        icon: Layers3,
-        skills: ["Responsive design", "Accessibility", "Performance", "Testing"],
+        skills: [
+            "Git",
+            "GitHub",
+            "Vite",
+            "VS Code",
+            "Responsive design",
+            "Accessibility",
+            "Performance",
+            "Testing",
+        ],
     },
 ];
 
@@ -34,8 +51,8 @@ export const SkillsSection = () => (
                 Skills <span className="text-primary">&amp; Tools</span>
             </h2>
             <p className="mx-auto mb-12 max-w-2xl text-center text-muted-foreground">
-                The technologies and practices I use to turn ideas into dependable
-                digital experiences.
+                Explore my skills across web development, AI and automation, data,
+                and developer tools.
             </p>
 
             <div className="grid gap-6 sm:grid-cols-2">
