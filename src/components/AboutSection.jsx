@@ -12,19 +12,18 @@ export const AboutSection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div className="space-y-6">
                         <h3 className="text-2xl font-semibold">
-                            Passionate Web Developer &amp; Tech Creator
+                            Web Developer Exploring AI &amp; Data
                         </h3>
                         <p className="text-muted-foreground">
-                            With over 5 years of experience in web development, I specialize
-                            in creating responsive, accessible, and performant web
-                            applications using modern technologies.
+                            I build web applications and explore AI, machine learning, and
+                            data visualization. My GitHub profile includes 14 public
+                            repositories across these areas.
                         </p>
 
                         <p className="text-muted-foreground">
-                            I&apos;m passionate about creating elegant solutions to complex
-                            problems, and I'm constantly learning new technologies and
-                            techniques to stay at the forefront of the ever-evolving web
-                            landscape.
+                            My projects range from React and JavaScript applications to
+                            Python and notebook-based experiments. I enjoy learning by
+                            building and sharing my work openly.
                         </p>
                         <div className="flex flex-col justify-center gap-4 pt-4 sm:flex-row">
                             <a href="#contact" className="cosmic-button">

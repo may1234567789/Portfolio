@@ -3,43 +3,38 @@ import { BrainCircuit, Code2, Database, Wrench } from "lucide-react";
 const skillGroups = [
     {
         title: "Web Development",
-        description: "Building responsive web experiences from frontend to backend.",
+        description: "Building web projects with modern frontend tools.",
         icon: Code2,
         skills: [
             "React",
             "JavaScript",
+            "TypeScript",
             "HTML",
             "CSS",
             "Tailwind CSS",
-            "Node.js",
-            "REST APIs",
+            "Vite",
+            "EJS",
         ],
     },
     {
         title: "AI & ML",
-        description: "Exploring intelligent tools and practical workflow automation.",
+        description: "Exploring AI, machine learning, and deep learning projects.",
         icon: BrainCircuit,
-        skills: ["AI tools", "Workflow automation"],
+        skills: ["Python", "Jupyter Notebook", "AI", "Machine learning"],
     },
     {
-        title: "Data Science",
-        description: "Connecting services and working with application data.",
+        title: "Data & Applications",
+        description: "Working on data visualization and application-focused projects.",
         icon: Database,
-        skills: ["SQL", "Authentication"],
+        skills: ["Data visualization", "Student performance prediction", "Web applications"],
     },
     {
-        title: "DevOps & Tools",
-        description: "Keeping development workflows productive and experiences reliable.",
+        title: "Developer Tools",
+        description: "Sharing projects and learning in public.",
         icon: Wrench,
         skills: [
             "Git",
             "GitHub",
-            "Vite",
-            "VS Code",
-            "Responsive design",
-            "Accessibility",
-            "Performance",
-            "Testing",
         ],
     },
 ];
@@ -51,8 +46,7 @@ export const SkillsSection = () => (
                 Skills <span className="text-primary">&amp; Tools</span>
             </h2>
             <p className="mx-auto mb-12 max-w-2xl text-center text-muted-foreground">
-                Explore my skills across web development, AI and automation, data,
-                and developer tools.
+                Technologies and topics reflected across my public projects.
             </p>
 
             <div className="grid gap-6 sm:grid-cols-2">
